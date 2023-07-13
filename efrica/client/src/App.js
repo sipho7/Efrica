@@ -24,12 +24,11 @@ class App extends React.Component {
   }
 
   render() {
-    //console.log(this.state.name, 'Sipho')
     return (
 
     <div className="App">
       
-
+      <h1>{this.state.name}, you are welcome to Efrica...</h1>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
