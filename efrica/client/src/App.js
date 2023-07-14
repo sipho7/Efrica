@@ -1,10 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 //import Posts from "./components/post";
-//import Navbar from "./components/blog"
+//import Menu1 from "./components/menu/menu";
+import SzhsinMenu from "./components/menu/szhsinmenu";
+import Home from "./components/home/home";
 import React from "react"
+//import Tooltip1 from "./components/tooltip";
+//import ReactDOM from 'react-dom/client';
 //import { useState, useEffect } from "react";
-
 class App extends React.Component {
   state = {
     name: ""
@@ -24,11 +27,17 @@ class App extends React.Component {
   }
 
   render() {
+    
+
     return (
 
     <div className="App">
       
-      <h1>{this.state.name}, you are welcome to Efrica...</h1>
+      
+      
+      <SzhsinMenu/>
+      
+      <Home/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -52,3 +61,5 @@ class App extends React.Component {
 }
 }
 export default App;
+//const root = ReactDOM.createRoot(document.getElementById('root'));
+//root.render(<App />);
